@@ -19,7 +19,7 @@ public class CurrencyLocalizationController {
     private CurrencyLocalizationService currencyLocalizationService;
 
     @PostMapping("/format")
-    public Map<String, LocalizationResponseEntity<CurrencyLocalizationEntity>> dateUtils(@RequestBody Map<String, CurrencyLocalizationEntity> requests) {
+    public Map<String, LocalizationResponseEntity<CurrencyLocalizationEntity>> currencyUtils(@RequestBody Map<String, CurrencyLocalizationEntity> requests) {
         return currencyLocalizationService.format(requests);
     }
 }
